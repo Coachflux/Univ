@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crypto Dashboard</title>
+    <title>UNIV Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"  rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
     <script src="assets/tailwindcss.js"></script>
@@ -168,7 +168,7 @@
             <div class="relative">
                 <!-- Navbar (Background) -->
                 <div
-                    class="bg-blue-600 py-4 px-6 flex items-center justify-between shadow-lg absolute w-full top-0 h-[50%] z-0 -mt-[10px]">
+                    class="bg-black-600 py-4 px-6 flex items-center justify-between shadow-lg absolute w-full top-0 h-[50%] z-0 -mt-[10px]">
                 </div>
 
                 <!-- Main Content (Cards) -->
@@ -177,7 +177,7 @@
                     <div class="bg-white rounded-lg p-6 shadow-md relative">
                         <div class="flex justify-between items-center">
                             <div>
-                                <p class="text-gray-500">Total Balance<i class="fas fa-eye cursor-pointer ml-1 text-sm"
+                                <p class="text-black-500">Total Balance<i class="fas fa-eye cursor-pointer ml-1 text-sm"
                                         id="toggle-eye"></i></p>
                                 <!-- Saldo yang bisa di-hide/show -->
                                 <p id="balance-amount" class="text-[20px] font-bold">$ 0.00</p>
@@ -224,7 +224,7 @@
         <div class="p-6">
             <div class="click-area shadow-lg rounded-lg p-12 relative overflow-hidden" id="click-area">
                 <i class="fas fa-hand-pointer fa-3x text-gray-400"></i>
-                <div class="text-gray-400 text-lg">Click to earn money</div>
+                <div class="text-black-400 text-lg">Click to earn</div>
                 <!-- Container for animated money -->
                 <div id="money-container" class="money-container"></div>
                 <!-- Audio element for the money sound effect -->
@@ -296,12 +296,12 @@
         <footer class="bg-white shadow-inner w-full fixed bottom-0">
             <div class="flex justify-around py-2 border-t">
                 <!-- Investing -->
-                <a href="investing.html" class="flex flex-col items-center text-gray-600 hover:text-blue-500">
+                <a href="investing.html" class="flex flex-col items-center text-black-600 hover:text-blue-500">
                     <i class="fas fa-chart-line text-xl"></i>
                     <span class="text-xs">Investing</span>
                 </a>
                 <!-- Mines Gambling -->
-                <a href="mines.html" class="flex flex-col items-center text-gray-600 hover:text-blue-500">
+                <a href="mines.html" class="flex flex-col items-center text-black-600 hover:text-blue-500">
                     <i class="fas fa-bomb text-xl"></i> <!-- Icon of a bomb to represent Mines Gambling -->
                     <span class="text-xs">Mines</span>
                 </a>
@@ -312,17 +312,17 @@
                     <span class="text-xs">Earnings</span>
                 </a>
                 <!-- Gambling -->
-                <a href="crash-game.html" class="flex flex-col items-center text-gray-600 hover:text-blue-500">
+                <a href="crash-game.html" class="flex flex-col items-center text-black-600 hover:text-blue-500">
                     <i class="fas fa-chart-line text-xl"></i>
                     <span class="text-xs">Gambling</span>
                 </a>
                 <!-- Limbo -->
-                <a href="limbo.html" class="flex flex-col items-center text-gray-600 hover:text-blue-500">
+                <a href="limbo.html" class="flex flex-col items-center text-black-600 hover:text-blue-500">
                     <i class="fas fa-arrow-up text-xl"></i> <!-- Arrow up icon -->
                     <span class="text-xs">Limbo</span>
                 </a>
                 <!-- Profile -->
-                <a href="profile.html" class="flex flex-col items-center text-gray-600 hover:text-blue-500">
+                <a href="profile.html" class="flex flex-col items-center text-black-600 hover:text-blue-500">
                     <i class="fas fa-user text-xl"></i>
                     <span class="text-xs">Profile</span>
                 </a>
@@ -332,9 +332,9 @@
 
     <script>
         // Harga awal
-        let bitcoinPrice = 35361; // Harga awal dalam USD untuk Bitcoin
+        let bitcoinPrice = 85361; // Harga awal dalam USD untuk Bitcoin
         let ethereumPrice = 3208; // Harga awal dalam USD untuk Ethereum
-        let solanaPrice = 33    ; // Harga awal dalam USD untuk Solana
+        let solanaPrice = 202    ; // Harga awal dalam USD untuk Solana
 
         // Menyimpan harga sebelumnya untuk menghitung naik/turun
         let previousBitcoinPrice = bitcoinPrice;
