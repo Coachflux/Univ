@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Masukkan PIN</title>
+    <title>UNIV PIN</title>
     <script src="assets/tailwindcss.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
@@ -41,8 +41,8 @@
     </div>
 
     <div class="text-center mb-8">
-        <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Masukkan PIN</h1>
-        <p class="text-sm font-bold text-red-500 mb-4">PIN: 123456</p>
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-4">UNIV PIN</h1>
+        <p class="text-sm font-bold text-red-500 mb-4">PIN: 180325</p>
 
         <div class="flex items-center justify-between bg-gray-100 p-4 rounded-full shadow-lg">
             <!-- Icon dan Username -->
@@ -50,7 +50,7 @@
                 <div class="bg-blue-500 text-white rounded-full h-12 w-12 flex items-center justify-center mr-3">
                     <i class="fas fa-user text-xl"></i>
                 </div>
-                <p class="text-gray-700 text-lg font-semibold">Username</p>
+                <p class="text-gray-700 text-lg font-semibold">UNIV USER</p>
             </div>
     
             <!-- Icon Logout dengan Title -->
@@ -77,7 +77,7 @@
     <!-- Error Message -->
     <div id="error-message" class="text-red-500 font-bold text-lg mb-6 hidden">Wrong PIN!</div>
     <div id="block-message" class="text-red-500 font-bold text-lg mb-6 hidden">
-        Anda telah diblokir selama <span id="remaining-time"></span> detik!
+        Wait for the timer and try again <span id="remaining-time"></span> input UNIV pin!
     </div>
     
 
@@ -107,7 +107,7 @@
     <script>
         let pin = [];
         const pinLength = 6;
-        const correctPin = [1, 2, 3, 4, 5, 6]; // Correct PIN
+        const correctPin = [1, 8, 0, 3, 2, 5]; // Correct PIN
         const maxAttempts = 3; // Maximum wrong attempts allowed
         const blockDuration = 2 * 60 * 1000; // Block duration is 1 minute
 
