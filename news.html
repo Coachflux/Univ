@@ -1,7 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIV Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"  rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script src="assets/tailwindcss.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<style>
+    .click-area {
+        position: relative;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    #toggle-sound {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    #toggle-sound i {
+        transition: color 0.3s ease;
+    }
+
+    #toggle-sound:hover i {
+        color: #28a745; /* Green color when hovered */
+    }
+
+    .click-area:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .money-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        overflow: hidden;
+    }
+
+    .money-text {
+        position: absolute;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #28a745; /* Dollar green */
+        pointer-events: none;
+        animation: moveUp 1s ease-out forwards;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .money-text i {
+        margin-right: 5px; /* Space between dollar icon and text */
+    }
+
+    @keyframes moveUp {
+        0% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+    }
 
 
 
-<!-- TradingView Widget BEGIN -->
+
+
+    /* Mobile-Only and Rejection Message */
+    @media (min-width: 1024px) {
+        .mobile-only {
+            display: none;
+        }
+
+        .desktop-only {
+            display: block;
+            background-color: #F87171;
+            color: white;
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 60px;
+            border-radius: 15px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+            margin: 100px auto;
+            max-width: 600px;
+        }
+    }
+
+    @media (max-width: 1023px) {
+        .mobile-only {
+            display: block;
+        }
+
+        .desktop-only {
+            display: none;
+        }
+    }
+</style>
+
+<body class="bg-gray-100">
+    <div class="mobile-only">
+        <!-- Navbar -->
+        <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
   <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
@@ -18,3 +128,62 @@
   </script>
 </div>
 <!-- TradingView Widget END -->
+
+        <!-- Balance Card -->
+        
+
+                    <!-- New Crypto Card (Attached Directly) -->
+                    
+
+        <!-- Tap Area -->
+        
+        
+        
+        <!-- Watchlist Section -->
+        
+
+        
+
+        <!-- Sticky Footer -->
+        <footer class="bg-white shadow-inner w-full fixed bottom-0">
+            <div class="flex justify-around py-2 border-t">
+                <!-- Investing -->
+                <a href="investing.html" class="flex flex-col items-center text-black-600 hover:text-blue-500">
+                    <i class="fas fa-chart-line text-xl"></i>
+                    <span class="text-xs">Investing</span>
+                </a>
+                <!-- Mines Gambling -->
+                <a href="mines.html" class="flex flex-col items-center text-black-600 hover:text-blue-500">
+                    <i class="fas fa-bomb text-xl"></i> <!-- Icon of a bomb to represent Mines Gambling -->
+                    <span class="text-xs">Mines</span>
+                </a>
+
+                <!-- Earnings -->
+                <a href="dashboard.html" class="flex flex-col items-center text-blue-600 hover:text-blue-500">
+                    <i class="fas fa-dollar-sign text-xl"></i>
+                    <span class="text-xs">Earnings</span>
+                </a>
+                <!-- Tasks -->
+                <a href="tasks.html" class="flex flex-col items-center text-black-600 hover:text-blue-500">
+                    <i class="fas fa-chart-line text-xl"></i>
+                    <span class="text-xs">Tasks</span>
+                </a>
+                <!-- Limbo -->
+                <a href="limbo.html" class="flex flex-col items-center text-black-600 hover:text-blue-500">
+                    <i class="fas fa-arrow-up text-xl"></i> <!-- Arrow up icon -->
+                    <span class="text-xs">Limbo</span>
+                </a>
+                <!-- News -->
+                <a href="news.html" class="flex flex-col items-center text-black-600 hover:text-blue-500">
+                    <i class="fas fa-user text-xl"></i>
+                    <span class="text-xs">News</span>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
+
+
