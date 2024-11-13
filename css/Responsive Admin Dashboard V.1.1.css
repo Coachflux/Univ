@@ -50,6 +50,7 @@ html{
 body{
     background: var(--color-light);
     min-height: 100vh;
+    width: 100%;
     color: var(--color-dark);
 }
 img{
