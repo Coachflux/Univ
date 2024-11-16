@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
     <script src="social-share.min.js"></script>
 
     <script src="assets/tailwindcss.js"></script>
@@ -185,6 +185,25 @@
                 
             </div>
             <!-- recent transaction -->
+		 <div class="container py-4">
+	
+		<div class="ss-box ss-round ss-shadow"></div>
+		<script>
+			p{ color: #fff !important;}
+		</script>
+		<script>			
+
+			function createNewShareBox(){
+				// SocialShare.createShareBox("#newShareBox", _link = null, _socials =  null, _showIcon = true, _showContent = true, _clearContainer = true);
+
+				// SocialShare.createShareBox("#newShareBox", null, null, true, true, true);
+
+				SocialShare.createShareBox("#newShareBox", "https://github.com/assisfery/SocialShareJS", "facebook, twitter, email, sms, viber");
+			}
+
+		</script>
+
+	</div>
             <!-- Sticky Footer -->
         <footer class="bg-white shadow-inner w-full fixed bottom-0">
             <div class="flex justify-around py-2 border-t">
