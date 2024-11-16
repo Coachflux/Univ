@@ -50,7 +50,7 @@ html{
 body{
     background: var(--color-light);
     min-height: 100vh;
-    width: 100%;
+    width: 90%;
     color: var(--color-dark);
 }
 img{
@@ -326,7 +326,7 @@ main section.middle .cards .card{
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 2rem 3rem var(--color-danger-light);
-    min-width: 22rem;
+    min-width: 18rem;
     transition: all 0.3s ease;
 }
 main section.middle .cards .card:nth-child(2){
@@ -446,7 +446,7 @@ main .fast-payment .badges .badge div{
 /* <!-- canvas --> */
 canvas#chart{
     background: var(--color-white);
-    min-width: 100%;
+    min-width: 90%;
     margin-top: 2rem;
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
